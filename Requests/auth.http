@@ -1,0 +1,12 @@
+### register request
+POST  http://localhost:8585/auth/register
+Content-Type: application/json
+
+{
+    "username":"mahyarsherafat",
+    "email":"ali@ali.com",
+    "mobile":"09162517728",
+    "password":"123456",
+    "confirm_password":"12345"
+    
+}

@@ -56,5 +56,12 @@ module.exports= class Application {
 
             })
             this.#app.use(AllRoutes)
+            this.#app.use((err,req,res,next)=>{
+                try {
+                  
+                } catch (error) {
+                    next(error)
+                }
+            })
     }
 }

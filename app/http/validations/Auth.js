@@ -37,6 +37,26 @@ function register() {
       }),
   ];
 }
+function login() {
+  return [
+    body("username").custom(async (value, ctx) => {
+      if (value) {
+        const userNameRegex = /^[a-z]+[a-z0-9\_\.]{2,}/gi;
+        if (!userNameRegex.test(value)) throw "نام کاربری نا معتبر";
+      } else {
+        throw "نام کاربری نمی تواند خالی باشد";
+
+      }
+    }),
+    body("password")
+      .isLength({ min: 6, max: 16 })
+      .custom((value, ctx) => {
+        if (!value) throw "رمز عبور نمیتواند خالی باشد";
+        return true;
+      }),
+  ];
+}
 module.exports = {
   registerValidator: register,
+  loginValidator: login,
 };

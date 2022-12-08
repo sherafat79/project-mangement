@@ -5,7 +5,12 @@ function hashString(str){
         return hashedString;
 
 }
+function compareHash(string,hasedString){
+    result=bcrypt.compareSync(string,hasedString);
+    return result;
+}
 
 module.exports={
-    hashString
+    hashString,
+    compareHash
 }

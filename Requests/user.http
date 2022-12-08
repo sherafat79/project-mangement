@@ -1,0 +1,8 @@
+### user by id request
+GET   http://localhost:8585/user/getUser/6391c8eec84b855f5e68e50b
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1haGRpc2hlcmFmYXQiLCJpYXQiOjE2NzA1MDUwMTQsImV4cCI6MTY3MDU5MTQxNH0.YE_bGZ9zPL5neitThCSi7KHKFwBfTcVgASvXs_AcS3A 
+
+
+### profile request
+GET   http://localhost:8585/user/getProfile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1haGRpc2hlcmFmYXQiLCJpYXQiOjE2NzA1MDUwMTQsImV4cCI6MTY3MDU5MTQxNH0.YE_bGZ9zPL5neitThCSi7KHKFwBfTcVgASvXs_AcS3A 
